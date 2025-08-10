@@ -1,22 +1,35 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --main-font-family: 'Raleway', sans-serif;
+  --main-font-size: 16px;
+  --main-line-height: 1.6;
+
+  --primary-text-color: #080c09;
+  --secondary-text-color: #ffffff;
+  --accent-color: #6b0609;
+
+  --primary-white-color: #ffffff;
+
+  --section-title-font-size: 36px;
+  --section-title-line-height: 1.2;
+  --section-title-letter-spacing: 0.01em;
+
+  --main-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+
   display: flex;
   flex-direction: column;
   min-width: 100vw;
@@ -24,9 +37,28 @@ body {
   margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 main {
   flex-grow: 1;
 }
-main:has(.back-link) {
-  text-align: center;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
