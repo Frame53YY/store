@@ -13,7 +13,8 @@
   --secondary-text-color: #ffffff;
   --accent-color: #6b0609;
 
-  --primary-white-color: #ffffff;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f0e6e6;
 
   --section-title-font-size: 36px;
   --section-title-line-height: 1.2;
@@ -53,7 +54,6 @@ html {
 
 .is-hidden {
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
 }
 
@@ -61,4 +61,33 @@ html {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.button {
+  padding: 10px 24px;
+  border-radius: 100px;
+  background-color: rgba(8, 12, 9, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(8, 12, 9, 0.05),
+    inset 0 -2px 1px 0 rgba(8, 12, 9, 0.05),
+    inset 0 0 0 1px rgba(8, 12, 9, 0.05);
+  transition: opacity 250ms var(--main-cubic-bezier);
+}
+
+.button.accent {
+  background-color: var(--accent-color);
+  color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(8, 12, 9, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(8, 12, 9, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.5;
 }

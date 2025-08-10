@@ -1,1 +1,154 @@
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.nav-list {
+  display: none;
+}
+
+.nav-logo {
+  display: block;
+  padding: 18px 0;
+  line-height: 1;
+}
+
+.menu-open-btn {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+  transition: transform 250ms var(--main-cubic-bezier),
+    opacity 250ms var(--main-cubic-bezier);
+}
+.mob-container.is-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.mob-menu-wrapper {
+  padding: 0 20px;
+}
+
+.mob-menu {
+}
+
+.mob-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.btn-close {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header-button {
+  font-weight: 500;
+  padding: 8px 20px;
+  width: 100%;
+  max-width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .container {
+    position: relative;
+  }
+  .mob-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 249px;
+    height: auto;
+
+    /* opacity: 0.3; */
+  }
+
+  .mob-menu-header {
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 32px;
+    height: 71px;
+    margin-bottom: 0;
+  }
+
+  .mob-menu-wrapper {
+    padding: 0;
+  }
+
+  .btn-close {
+  }
+
+  .mob-menu-header .nav-logo {
+    display: none;
+  }
+
+  .mob-menu-nav {
+    align-items: end;
+    padding: 24px 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .menu-open-btn,
+  .mob-container {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 22px 0;
+    transition: opacity 250ms var(--main-cubic-bezier);
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    opacity: 0.5;
+  }
+
+  .header-button {
+    font-size: 16px;
+  }
+}

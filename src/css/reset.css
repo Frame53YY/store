@@ -26,6 +26,7 @@ a {
 button {
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 img {
@@ -42,4 +43,8 @@ select {
   outline: none;
   border: none;
   background: none;
+}
+
+svg {
+  display: block;
 }
