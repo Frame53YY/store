@@ -44,8 +44,8 @@
   padding: 0 20px;
 }
 
-.mob-menu {
-}
+/* .mob-menu {
+} */
 
 .mob-menu-header {
   display: flex;
@@ -108,8 +108,8 @@
     padding: 0;
   }
 
-  .btn-close {
-  }
+  /* .btn-close {
+  } */
 
   .mob-menu-header .nav-logo {
     display: none;
