@@ -17,6 +17,12 @@
       refs.body.classList.remove('no-scroll');
     }
   });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1440) {
+      refs.menu.classList.add('is-hidden');
+      refs.body.classList.remove('no-scroll');
+    }
+  });
 
   function toggleMenu() {
     refs.menu.classList.toggle('is-hidden');
