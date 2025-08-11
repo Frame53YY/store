@@ -69,6 +69,12 @@
   gap: 32px;
 }
 
+.mob-menu-nav .nav-item {
+  width: 100%;
+  max-width: 335px;
+  text-align: center;
+}
+
 .nav-link {
   font-weight: 600;
   font-size: 18px;
@@ -78,7 +84,6 @@
   font-weight: 500;
   padding: 8px 20px;
   width: 100%;
-  max-width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -118,6 +123,14 @@
   .mob-menu-nav {
     align-items: end;
     padding: 24px 32px;
+  }
+
+  .mob-menu-nav .nav-item {
+    width: auto;
+    text-align: end;
+  }
+
+  .header-button {
   }
 }
 
