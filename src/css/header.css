@@ -113,9 +113,6 @@
     padding: 0;
   }
 
-  /* .btn-close {
-  } */
-
   .mob-menu-header .nav-logo {
     display: none;
   }
@@ -128,9 +125,6 @@
   .mob-menu-nav .nav-item {
     width: auto;
     text-align: end;
-  }
-
-  .header-button {
   }
 }
 
