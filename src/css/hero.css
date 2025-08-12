@@ -16,6 +16,7 @@
 }
 
 .hero-title {
+  font-size: 40px;
   color: #fff;
   margin-bottom: 24px;
 }
@@ -74,5 +75,8 @@
   .hero-section {
     padding-top: 92px;
     padding-bottom: 92px;
+  }
+  .hero-title {
+    font-size: 56px;
   }
 }

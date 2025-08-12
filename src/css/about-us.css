@@ -1,0 +1,35 @@
+.about-us-section {
+  background-color: var(--secondary-bg-color);
+}
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.about-us-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.team-image {
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-image {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us-container {
+    flex-direction: row;
+  }
+  .about-us-text-wrap {
+    width: 647px;
+    margin: auto 0;
+  }
+  .team-image {
+    width: 647px;
+  }
+}
