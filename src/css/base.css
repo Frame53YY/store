@@ -38,18 +38,15 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 
-main {
-  flex-grow: 1;
-}
-
-html {
-  scroll-behavior: smooth;
+.text {
+  font-weight: 400;
 }
 
 .is-hidden {
@@ -63,12 +60,29 @@ html {
   pointer-events: auto;
 }
 
+main {
+  flex-grow: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   padding-top: 48px;
   padding-bottom: 48px;
+  /* max-width: 1440px; */
+  /* margin: 0 auto; */
 }
 
 .button {
+  display: inline-block;
   font-size: 16px;
   padding: 10px 24px;
   border-radius: 100px;
@@ -76,7 +90,8 @@ html {
   box-shadow: 0 1px 2px 0 rgba(8, 12, 9, 0.05),
     inset 0 -2px 1px 0 rgba(8, 12, 9, 0.05),
     inset 0 0 0 1px rgba(8, 12, 9, 0.05);
-  transition: opacity 250ms var(--main-cubic-bezier);
+  transition: opacity 250ms var(--main-cubic-bezier),
+    transform 250ms var(--main-cubic-bezier);
 }
 
 .button.accent {
@@ -91,4 +106,18 @@ html {
 .button:hover,
 .button:focus {
   opacity: 0.5;
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .section-title {
+    font-size: 56px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
 }

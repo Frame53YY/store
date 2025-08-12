@@ -1,3 +1,78 @@
 .hero-section {
-  background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+    url(/images/hero/hero-bg-mob.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 157px;
+  padding-bottom: 157px;
+}
+
+@media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+      url(/images/hero/hero-bg-mob@2x.jpg);
+  }
+}
+
+.hero-title {
+  color: #fff;
+  margin-bottom: 24px;
+}
+.hero-text {
+  color: #fff;
+  margin-bottom: 32px;
+}
+.hero-button {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 428px) {
+  .hero-section {
+    background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+      url(/images/hero/hero-bg-tab.jpg);
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+      background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+        url(/images/hero/hero-bg-tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+      url(/images/hero/hero-bg-desc.jpg);
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+      background-image: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+        url(/images/hero/hero-bg-desc@2x.jpg);
+    }
+  }
+  .hero-title {
+    width: 560px;
+  }
+  .hero-text {
+    width: 560px;
+  }
+  .hero-button {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
 }
