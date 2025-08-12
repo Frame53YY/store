@@ -9,8 +9,11 @@
 }
 
 .nav-logo {
-  display: block;
-  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 163px;
+  height: 70px;
   line-height: 1;
   transition: fill 250ms var(--main-cubic-bezier),
     transform 250ms var(--main-cubic-bezier);
@@ -160,9 +163,10 @@
     padding: 22px 0;
     transition: opacity 250ms var(--main-cubic-bezier);
   }
+
   .nav-link:hover,
   .nav-link:focus {
-    /* opacity: 0.5; */
+    opacity: 0.5;
   }
 
   .nav-link::after {

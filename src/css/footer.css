@@ -1,0 +1,41 @@
+.footer {
+  background-color: #6b0609;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+  gap: 24px;
+}
+
+.footer-logo {
+  fill: #fff;
+  width: 228px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  color: #fff;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-soc-link {
+  fill: #fff;
+}
+
+.footer-text {
+  color: #fff;
+}
