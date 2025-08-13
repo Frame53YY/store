@@ -1,5 +1,7 @@
 .about-us-section {
   background-color: var(--secondary-bg-color);
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .about-us-container {
   display: flex;
@@ -16,12 +18,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-us-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .team-image {
     width: 704px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .about-us-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
   .about-us-container {
     flex-direction: row;
   }
