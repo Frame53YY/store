@@ -101,18 +101,18 @@ img {
     inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
 }
 
-.button:hover,
-.button:focus {
-  opacity: 0.5;
-  transform: scale(1.05);
-}
-
 @media screen and (min-width: 768px) {
   body {
     font-size: 18px;
   }
   .section-title {
     font-size: 48px;
+  }
+
+  .button:hover,
+  .button:focus {
+    opacity: 0.5;
+    transform: scale(1.05);
   }
 
   .text {
