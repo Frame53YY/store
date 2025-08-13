@@ -36,6 +36,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .section-title {
@@ -77,8 +78,6 @@ img {
 .section {
   padding-top: 48px;
   padding-bottom: 48px;
-  /* max-width: 1440px; */
-  /* margin: 0 auto; */
 }
 
 .button {
