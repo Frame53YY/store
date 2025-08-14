@@ -60,6 +60,11 @@ body {
   pointer-events: auto;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 main {
   flex-grow: 1;
 }
